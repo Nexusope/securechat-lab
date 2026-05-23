@@ -1,0 +1,16 @@
+<h2>SecureChat Lab</h2>
+
+<p>Welcome {{ user }}</p>
+
+<a href="/logout">Logout</a>
+
+<form method="POST">
+  <input name="message" placeholder="Type message..." required>
+  <button type="submit">Send</button>
+</form>
+
+<hr>
+
+{% for u, m in messages %}
+  <p><b>{{ u }}:</b> {{ m }}</p>
+{% endfor %}
