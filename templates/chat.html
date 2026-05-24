@@ -12,5 +12,5 @@
 <hr>
 
 {% for u, m in messages %}
-  <p><b>{{ u }}:</b> {{ m }}</p>
+  <p><b>{{ u }}:</b> {{ m | safe }}</p>
 {% endfor %}
